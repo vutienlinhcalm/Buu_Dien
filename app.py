@@ -1,8 +1,8 @@
-from flask import Flask
+from flask import Flask,redirect,url_for,render_template
 
 app = Flask(__name__)
 
 @app.route('/')
 
 def app_world():
-    return '<h5> Hello 123 world! </h5>'
+    return render_template('index.html')
